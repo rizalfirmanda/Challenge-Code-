@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="container">
+        <div class="card">
+            <div class="card-image img-1"></div>
+            <h2>Top Winter</h2>
+            <p>More Than 200 Locations</p>
+            <p class="text-1">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            </p>
+            <button class="btn" onclick="togglePopup()" type="button">Export</button>
+        </div>
+        <div class="card-1">
+            <div class="card-image img-2"></div>
+            <h2>Forest Street</h2>
+            <p>2.000 miles of wonder</p>
+            <button class="btn" onclick="togglePopup()" type="button">Export</button>
+        </div>
+        <div class="card-2">
+            <div class="top">
+                <div class="userDetails">
+                    <div class="profile-img">
+                        <img src="logo.png" class="cover">
+                    </div>
+                    <h3>Profile<br><span>20 mins.ago</span></h3>
+                </div>
+            </div>
+            <div class="card-image-1 img-3"></div>
+            <h2>Lake</h2>
+            <p>Loprem Ipsum</p>
+            <p class="text-2">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+            </p>
+        </div>
+        <div class="card">
+            <div class="card-image img-2"></div>
+            <div class="actionBtn">
+                <img src="heart.png">
+                <img src="bookmark.png" alt="">
+                <img src="location.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!--popup start-->
+    <div class="popup" id="popup-1">
+        <div class="content">
+            <div class="close-btn" onclick="togglePopup()">&times;</div>
+            <h1>Title</h1>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            </p>
+        </div>
+    </div>
+    <!--popup end-->
+    <script>
+        function togglePopup(){
+            document.getElementById("popup-1")
+            .classList.toggle("active")
+        }
+    </script>
+</body>
+</html>
